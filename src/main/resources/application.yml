@@ -15,7 +15,7 @@ spring:
         - id: Return
           uri: http://localhost:8085
           predicates:
-            - Path=/returns/**
+            - Path=/returns/**,/products/**
         - id: Information
           uri: http://localhost:8084
           predicates:
@@ -46,7 +46,7 @@ spring:
         - id: Return
           uri: http://Return:8080
           predicates:
-            - Path=/returns/**
+            - Path=/returns/**,/products/**
         - id: Information
           uri: http://Information:8080
           predicates:
